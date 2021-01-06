@@ -1,0 +1,402 @@
+/* Color Palette
+#fffcf9
+#FFF6ED
+#EDD8C4
+#A18A75
+#EBEDED
+#5290A1 
+#2f2e41
+
+#EBECF0
+#F4F5F7*/
+
+/* Global */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans";
+  background: #fff6ed;
+  display: flex;
+  height: 100%;
+  white-space: wrap;
+  flex-direction: column;
+  /* overflow-x: hidden; */
+  /* overflow-y: scroll; */
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+/* Navigation */
+/* .navigation {
+  width: 100vw;
+} */
+
+.nav-bg {
+  background: #a18a75;
+}
+
+.landing-logo {
+  font-size: 2rem;
+  font-family: Pacifico;
+}
+
+.board-logo {
+  font-family: Pacifico;
+}
+
+.btn-login,
+.btn-signup {
+  font-weight: bold;
+}
+
+.btn-login {
+  background: #a18a75;
+}
+
+.btn-login:hover {
+  background: white;
+  color: #a18a75;
+}
+
+.btn-login:focus {
+  background: white;
+  color: #a18a75;
+}
+
+.btn-signup:hover {
+  color: #a18a75;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.user-drop-item {
+  color: #2f2e41;
+}
+
+.user-drop-item:hover {
+  background: #a18a75;
+  color: #fffcf9;
+  font-weight: bold;
+}
+
+.user-drop {
+  background: #fffcf9;
+  border: none;
+  border-radius: 4px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.31) 0px 0px 1px 0px;
+}
+
+@media (min-width: 576px) {
+  .position-sm-rel {
+    position: relative !important;
+  }
+}
+
+/* Banner */
+
+.jumbotron {
+  background: #fff6ed;
+  color: #2f2e41;
+}
+
+.banner-img {
+  background: url(/images/banner-img.svg);
+}
+
+.banner p {
+  margin: 1rem 0 2.5rem;
+}
+
+.banner h2 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* CTA Bar */
+.ctaBar {
+  background: #fff6ed;
+}
+
+.cta-button {
+  background: rgb(82, 145, 163);
+  font-weight: bold;
+  color: white;
+}
+
+.cta-button:hover {
+  background: #2f2e41;
+  color: white;
+}
+
+.cta-button:active,
+.cta-button:focus {
+  box-shadow: 0 3px 0 0 #2f2e41;
+}
+
+.cta-form {
+  border-color: #5290a1;
+}
+
+.cta-form:focus {
+  box-shadow: 0 3px 0 0 #5290a1;
+  border-color: #5290a1;
+}
+
+/* Features */
+.features {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  color: #2f2e41;
+}
+
+.features p {
+  margin-top: 1rem;
+}
+
+.feature1 {
+  background: #edd8c4;
+}
+
+.feature2 {
+  background: #fffcf9;
+}
+
+.feature3 {
+  background: #fff6ed;
+}
+
+/* Task Board */
+.board-canvas {
+  /* Ignore nav bar & stay under it */
+  position: absolute;
+  z-index: -1;
+  flex-grow: 1;
+  white-space: nowrap;
+  height: 100%;
+  padding: 53px 5px 10px 5px;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.board-canvas p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.list-title {
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: hsl(29, 19%, 40%);
+}
+
+.fa-plus-custom {
+  font-size: 1.1rem;
+  padding: 0 0.1rem 0.5rem 0.5rem;
+}
+
+.list-wrapper {
+  width: 250px;
+  margin: 5px;
+  height: 90%;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.list-canvas-style {
+  background: #a18a753b;
+  white-space: normal;
+  border: none;
+  border-radius: 0;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.31) 0px 0px 1px 0px;
+}
+
+.add-task {
+  color: #a18a75;
+  cursor: pointer;
+}
+
+.add-task:hover {
+  color: #5290a1;
+}
+
+/* Task Card */
+.task-card-style .card {
+  background: white;
+  border-radius: 4px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.31) 0px 0px 1px 0px;
+}
+
+.task-card h6 {
+  color: #2f2e41;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+.task-card p {
+  color: #2f2e41;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.task-card .task-card-item {
+  margin-left: 8px;
+}
+
+.task-card .dropdown-divider {
+  margin: 0.3rem;
+}
+
+.card-member-img {
+  width: 22px;
+}
+
+.drop-loc {
+  height: 10px;
+}
+
+#add-task-card-title:focus,
+input:focus,
+.uneditable-input:focus {
+  border-color: #5290a1 !important;
+  box-shadow: 0 1px 1px transparent inset, 0 0 8px transparent !important;
+  outline: 0 none !important;
+}
+
+/* Task Card Status Dropdown */
+.task-card-status-click:hover {
+  background: #f4f5f7;
+  border-radius: 4px;
+}
+
+.task-card-drop-item {
+  color: #2f2e41;
+}
+
+.task-card-drop-item:hover {
+  background: #a18a75;
+  color: #fffcf9;
+  font-weight: bold;
+}
+
+.task-card-drop {
+  background: #fffcf9;
+  border: none;
+  border-radius: 4px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.31) 0px 0px 1px 0px;
+}
+
+/* Modal Form */
+.modal-style {
+  background: #f4f5f7;
+  border: none;
+  border-radius: 4px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.31) 0px 0px 1px 0px;
+}
+
+.update-task-btn-style {
+  background: #5290a1;
+  color: white;
+  font-weight: bold;
+}
+
+.update-task-btn-style:hover {
+  background: hsl(193, 33%, 42%);
+  color: white;
+}
+
+.delete-task-btn {
+  background: #bb4848;
+  border: none;
+}
+
+.delete-task-btn:hover {
+  background: hsl(0, 46%, 42%);
+  color: white;
+}
+
+.modal-body {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.text-area {
+  resize: none;
+}
+
+.modal-body .form-group {
+  margin: 0;
+}
+
+.modal-body .input-group {
+  padding: 0.5rem;
+  /* margin: 0.5rem; */
+}
+
+.fa-calendar-check {
+  padding: 0 1px;
+}
+
+.close:hover,
+.close:focus,
+.close:active,
+.close:active:focus:not(:disabled):not(.disabled),
+.close:focus,
+.close:active,
+.close:hover {
+  box-shadow: none !important;
+  outline: 0;
+}
+
+/* Modal Form - Checklist */
+#new-task-checklist {
+  width: 105%;
+}
+
+.checkbox-container {
+  margin: 1rem 0rem;
+}
+
+.form-check {
+  list-style: none;
+  margin: 1rem;
+  position: relative;
+}
+
+.checkbox-container span {
+  position: absolute;
+  right: -100rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.checkbox-container:hover span {
+  right: 0.2rem;
+}
+
+.todoList li .i {
+  padding: 2rem;
+}
+
+
+.inputField button:hover {
+  color:black;
+}
